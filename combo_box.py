@@ -12,5 +12,3 @@ def on_select(event):
 #
 root = tk.Tk()
 root.title("Combobox Example")
-    
-
