@@ -16,10 +16,13 @@ root.title("Favorite Color")
 #Create the array
 items = ["Red", "Green", "Purple", "Orange"]
 
-#Binding event to the function
+#Creating the combobox object with array values in it and placing it in root window
 combo_box = ttk.Combobox(root, values=items)
+#Binding event to the on_selected function
 combo_box.bind("<<ComboboxSelected>>", on_select)
 
+#Putting the object on the display
 combo_box.pack()
 
+#Keeping the root window open
 root.mainloop()
