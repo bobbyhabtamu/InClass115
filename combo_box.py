@@ -11,4 +11,15 @@ def on_select(event):
     
 #Title for the root window
 root = tk.Tk()
-root.title("Combobox Example")
+root.title("Favorite Color")
+
+#Create the array
+items = ["Red", "Green", "Purple", "Orange"]
+
+#Binding event to the function
+combo_box = ttk.Combobox(root, values=items)
+combo_box.bind("<<ComboboxSelected>>", on_select)
+
+combo_box.pack()
+
+root.mainloop()
